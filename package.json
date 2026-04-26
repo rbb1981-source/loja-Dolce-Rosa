@@ -1,0 +1,11 @@
+{
+  "name": "dolce-rosa-store",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check": "node --check script.js && node --check api/create-preference.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

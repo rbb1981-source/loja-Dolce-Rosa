@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Loja virtual Dolce Rosa Professional com produtos profissionais para tratamento capilar."
+    />
+    <title>Dolce Rosa Professional | Loja Oficial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Dolce Rosa Professional">
+        <img src="assets/logo.png" alt="Dolce Rosa Professional" />
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#categorias">Categorias</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">WhatsApp</a>
+      </nav>
+      <button class="cart-button" id="openCart" type="button" aria-label="Abrir carrinho">
+        <span>Carrinho</span>
+        <strong id="cartCount">0</strong>
+      </button>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Dolce Rosa Professional</p>
+          <h1>Tratamento profissional para cabelos incríveis</h1>
+          <p>
+            Fórmulas de performance para salões, revendas e clientes que buscam brilho,
+            cuidado e acabamento premium.
+          </p>
+          <a class="primary-link" href="#produtos">Comprar agora</a>
+        </div>
+      </section>
+
+      <section class="categories" id="categorias" aria-labelledby="categoriesTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Escolha por necessidade</p>
+          <h2 id="categoriesTitle">Categorias de produtos</h2>
+        </div>
+        <div class="category-grid">
+          <button class="category-card is-active" type="button" data-category="Todos">
+            <span>Todos</span>
+            <small>Catálogo completo</small>
+          </button>
+          <button class="category-card" type="button" data-category="Alisamento">
+            <span>Alisamento</span>
+            <small>Progressiva e botox</small>
+          </button>
+          <button class="category-card" type="button" data-category="Tratamento">
+            <span>Tratamento</span>
+            <small>Máscaras e kits</small>
+          </button>
+          <button class="category-card" type="button" data-category="Finalização">
+            <span>Finalização</span>
+            <small>Cachos, perfume e proteção</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="products-section" id="produtos" aria-labelledby="productsTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Pronta entrega</p>
+          <h2 id="productsTitle">Produtos Dolce Rosa</h2>
+        </div>
+        <div class="products-grid" id="productsGrid"></div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-labelledby="cartTitle" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">Seu pedido</p>
+          <h2 id="cartTitle">Carrinho</h2>
+        </div>
+        <button class="icon-button" id="closeCart" type="button" aria-label="Fechar carrinho">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <label class="payment-field" for="paymentMethod">
+          <span>Forma de pagamento</span>
+          <select id="paymentMethod">
+            <option value="Pix">Pix</option>
+            <option value="Mercado Pago">Mercado Pago</option>
+            <option value="Cartão">Cartão</option>
+            <option value="Dinheiro">Dinheiro</option>
+            <option value="Combinar pelo WhatsApp">Combinar pelo WhatsApp</option>
+          </select>
+        </label>
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">R$ 0,00</strong>
+        </div>
+        <button class="checkout-button" id="checkoutButton" type="button">
+          Finalizar pedido no WhatsApp
+        </button>
+        <p class="checkout-note" id="checkoutNote">
+          Ao escolher Mercado Pago, o pedido abre no checkout seguro.
+        </p>
+      </div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+
+    <footer class="site-footer" id="contato">
+      <strong>Dolce Rosa Professional</strong>
+      <span>Loja virtual responsiva preparada para GitHub Pages.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
