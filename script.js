@@ -1,5 +1,5 @@
 const WHATSAPP_NUMBER = "";
-const MERCADO_PAGO_BACKEND_URL = "";
+const MERCADO_PAGO_BACKEND_URL = "https://loja-dolce-rosa.vercel.app";
 
 const products = [
   {
