@@ -1,8 +1,0 @@
-index.html
-styles.css
-script.js
-README.md
-package.json
-.gitignore
-api
-assets
